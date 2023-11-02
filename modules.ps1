@@ -8,7 +8,7 @@ Measure-Command{
     $Users = Get-AzADUser
 }
 
-$Me = $Users | where-Object {$_.Mail -eq 'tobias.meier'}
+$Me = $Users | where-Object {$_.Mail -eq 'tobias.meier@stud.hslu.ch'}
 $Me | Select-Object *
 
 Get-AzADGroup | Select-Object -First 20

@@ -25,6 +25,7 @@ class Student : Person {
     Student([string]$Name,[string]$Email) {
         $this.Name = $Name
         $this.Email = $Email
+        $this.Address = [Address]::new()
     }
 
     [string] registerModul ([string]$ModulName){
