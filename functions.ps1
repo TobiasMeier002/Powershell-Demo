@@ -74,3 +74,5 @@ new-DemoDir
 $RootPath = "$($ENV:USERPROFILE)\AppData\Local\POWERSHELL-DEMO"
 
 new-Backup -Source $RootPath -Destination "$ENV:TEMP\Backup" -Recurse -Differencial
+
+new-Backup -

@@ -13,3 +13,5 @@ Invoke-Command -Session $Session -ScriptBlock {get-Process | Select-Object -Firs
 Enter-PSSession -Session $Session
 
 Exit-PSSession
+
+Get-PSSession | Remove-PSSession
